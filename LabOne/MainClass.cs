@@ -42,22 +42,22 @@ namespace LabOne
                 case 5:
                     TaskFive.Do();
                     break;
+                case 6:
+                    TaskSix.Do();
+                    break;
+                case 7:
+                    TaskSeven.Do();
+                    break;
+                case 8:
+                    TaskEight.Do();
+                    break;
+                case 9:
+                    TaskNine.Do();
+                    break;
+                case 10:
+                    TaskTen.Do();
+                    break;
                 /*case 1:
-                    TaskOne.Do();
-                    break;
-                case 1:
-                    TaskOne.Do();
-                    break;
-                case 1:
-                    TaskOne.Do();
-                    break;
-                case 1:
-                    TaskOne.Do();
-                    break;
-                case 1:
-                    TaskOne.Do();
-                    break;
-                case 1:
                     TaskOne.Do();
                     break;
                     break;*/

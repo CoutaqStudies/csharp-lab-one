@@ -32,8 +32,14 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GeographicalUnit.cs" />
+    <Compile Include="TaskEight.cs" />
     <Compile Include="TaskFive.cs" />
     <Compile Include="TaskFour.cs" />
+    <Compile Include="TaskNine.cs" />
+    <Compile Include="TaskSeven.cs" />
+    <Compile Include="TaskSix.cs" />
+    <Compile Include="TaskTen.cs" />
     <Compile Include="TaskThree.cs" />
     <Compile Include="MainClass.cs" />
     <Compile Include="TaskTwo.cs" />
