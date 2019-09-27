@@ -2,7 +2,7 @@
 
 namespace LabOne
 {
-    class MainClass
+    class TaskOne
     {
         public static void Main(string[] args)
         {
@@ -18,10 +18,10 @@ namespace LabOne
                 }
                 catch (FormatException e)
                 {
-                    Console.WriteLine("Incorrect input!");
+                    Console.Write("Incorrect input, try again: ");
                 }
             }
-            int d = Double ((x%1)* 10);
+            int d = (int)Math.Round((x%1)* 10);
             Console.WriteLine(d);
         }
 
