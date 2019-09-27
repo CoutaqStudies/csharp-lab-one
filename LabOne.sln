@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabOne", "LabOne\LabOne.csproj", "{C7F180CB-B234-4060-9B45-ECB35BCE6256}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabOne", "LabOne\LabOne.csproj", "{FD239C5E-B538-4978-BF94-7A2793B21F1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +9,9 @@ Global
 		Release|anycpu = Release|anycpu
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C7F180CB-B234-4060-9B45-ECB35BCE6256}.Debug|anycpu.ActiveCfg = Debug|anycpu
-		{C7F180CB-B234-4060-9B45-ECB35BCE6256}.Debug|anycpu.Build.0 = Debug|anycpu
-		{C7F180CB-B234-4060-9B45-ECB35BCE6256}.Release|anycpu.ActiveCfg = Release|anycpu
-		{C7F180CB-B234-4060-9B45-ECB35BCE6256}.Release|anycpu.Build.0 = Release|anycpu
+		{FD239C5E-B538-4978-BF94-7A2793B21F1F}.Debug|anycpu.ActiveCfg = Debug|anycpu
+		{FD239C5E-B538-4978-BF94-7A2793B21F1F}.Debug|anycpu.Build.0 = Debug|anycpu
+		{FD239C5E-B538-4978-BF94-7A2793B21F1F}.Release|anycpu.ActiveCfg = Release|anycpu
+		{FD239C5E-B538-4978-BF94-7A2793B21F1F}.Release|anycpu.Build.0 = Release|anycpu
 	EndGlobalSection
 EndGlobal
