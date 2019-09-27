@@ -25,5 +25,11 @@ namespace LabOne
         {
         }
 
+        public String getInfoTable()
+        {
+            String output = String.Format("|{0}|{1}|{2}|{3}|", this.country, this.capital, this.population, this.form);
+            return output;
+        }
+
     }
 }

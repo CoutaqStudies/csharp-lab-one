@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace LabOne
             GeographicalUnit[] countries = new GeographicalUnit[numOfCountries];
             for(int i = 0; i < numOfCountries; i++)
             {
+                Console.WriteLine("Country " + (i+1)+":");
                 Console.Write("Please enter the country: ");
                 String country = Console.ReadLine();
                 Console.Write("Please enter the capital: ");
@@ -56,19 +58,48 @@ namespace LabOne
                     }
                 }
                 String formString = "";
+                string upperString = "";
                 GeographicalUnit.formOfGov form;
-                Console.Write("Please enter the form of government: ");
-                formString = Console.ReadLine();
-                if (formString == "US")
+                tryAgain = true;
+                while (tryAgain)
                 {
-                    form = GeographicalUnit.formOfGov.US;
+                    try
+                    {
+                        Console.Write("Please enter the form of government: ");
+                        formString = Console.ReadLine();
+                        upperString = (formString.ToUpper()).ToString();
+                        if(upperString != "US" && upperString != "F")
+                        {
+                            throw new FormatException();
+                        }
+                        tryAgain = false;
+                    }
+                    catch (FormatException e)
+                    {
+                        Console.Write("Incorrect input, try again: ");
+                    }
                 }
-                else
+                
+                if (upperString == "F")
                 {
                     form = GeographicalUnit.formOfGov.F;
                 }
+                else
+                {
+                    form = GeographicalUnit.formOfGov.US;
+                }
+                countries[i] = new GeographicalUnit(country, capital, population, form);
                   
             }
+            String output = "\n---------------------------------\n";
+            for (int i = 0; i < numOfCountries; i++)
+            {
+                output += (countries[i].getInfoTable());
+                output += "\n---------------------------------\n";
+               
+            }
+            Console.WriteLine(output);
         }
     }
+
 }
