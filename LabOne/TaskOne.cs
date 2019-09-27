@@ -4,7 +4,7 @@ namespace LabOne
 {
     class TaskOne
     {
-        public static void Main(string[] args)
+        public static void Do()
         {
             double x = 0;
             Console.Write("Please enter your number: ");

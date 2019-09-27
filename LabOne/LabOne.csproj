@@ -32,6 +32,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TaskThree.cs" />
+    <Compile Include="MainClass.cs" />
+    <Compile Include="TaskTwo.cs" />
     <Compile Include="TaskOne.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
