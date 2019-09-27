@@ -7,16 +7,16 @@ namespace LabOne
         public static void Main(string[] args)
         {
             int taskNumber = 1;
-            Console.Write("Please select the task(1-10): ");
+            Console.Write("Please select the task(1-11): ");
             bool tryAgain = true;
             while (tryAgain)
             {
                 try
                 {
                     taskNumber = int.Parse(Console.ReadLine());
-                    if(taskNumber>10 || taskNumber < 1)
+                    if(taskNumber < 1 || taskNumber>11)
                     {
-                        throw new FormatException();
+                       throw new FormatException();
                     }
                     tryAgain = false;
                 }
@@ -57,10 +57,9 @@ namespace LabOne
                 case 10:
                     TaskTen.Do();
                     break;
-                /*case 1:
-                    TaskOne.Do();
+                case 11:
+                    TaskEleven.Do();
                     break;
-                    break;*/
             }
         }
 

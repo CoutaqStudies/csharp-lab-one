@@ -25,7 +25,7 @@ namespace LabOne
                     Console.Write("Incorrect input, try again: ");
                 }
             }
-            double answer = ((3 * (x * x * x * x)) - (5 * (x * x * x)) + (2 * (x * x)) - x + 7);
+            double answer = 7+x*(-1+x*(2+x*(-5+3*x)));
             Console.WriteLine(answer);
         }
     }
