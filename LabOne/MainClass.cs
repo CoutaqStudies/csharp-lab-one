@@ -36,12 +36,13 @@ namespace LabOne
                 case 3:
                     TaskThree.Do();
                     break;
-                /*case 1:
-                    TaskOne.Do();
+                case 4:
+                    TaskFour.Do();
                     break;
-                case 1:
-                    TaskOne.Do();
-                case 1:
+                case 5:
+                    TaskFive.Do();
+                    break;
+                /*case 1:
                     TaskOne.Do();
                     break;
                 case 1:
