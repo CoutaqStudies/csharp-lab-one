@@ -28,46 +28,48 @@ namespace LabOne
                 switch (taskNumber)
             {
                 case 1:
-                    Console.WriteLine("ONE");
+                    TaskOne.Do();
+                    MainClass.Main(args);
                     break;
                 case 2:
-                    Console.WriteLine("ONE");
                     TaskTwo.Do();
+                    MainClass.Main(args);
                     break;
                 case 3:
-                    Console.WriteLine("ONE");
                     TaskThree.Do();
+                    MainClass.Main(args);
                     break;
                 case 4:
-                    Console.WriteLine("ONE");
                     TaskFour.Do();
+                    MainClass.Main(args);
                     break;
                 case 5:
-                    Console.WriteLine("ONE");
                     TaskFive.Do();
+                    MainClass.Main(args);
                     break;
                 case 6:
-                    Console.WriteLine("ONE");
                     TaskSix.Do();
+                    MainClass.Main(args);
                     break;
                 case 7:
-                    Console.WriteLine("ONE");
                     TaskSeven.Do();
+                    MainClass.Main(args);
                     break;
                 case 8:
-                    Console.WriteLine("ONE");
                     TaskEight.Do();
+                    MainClass.Main(args);
                     break;
                 case 9:
-                    Console.WriteLine("no");
+                    TaskNine.Do();
+                    MainClass.Main(args);
                     break;
                 case 10:
-                    Console.WriteLine("ONE");
                     TaskTen.Do();
+                    MainClass.Main(args);
                     break;
                 case 11:
-                    Console.WriteLine("ONE");
-                    TaskEleven.Do();
+                    TaskTen.Do();
+                    MainClass.Main(args);
                     break;
             }
         }

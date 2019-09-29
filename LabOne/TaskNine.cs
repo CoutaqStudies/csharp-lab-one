@@ -10,7 +10,6 @@ namespace LabOne
     {
         public static void Do()
         {
-            Console.WriteLine("ninen");
             int[] a = new int[3];
             int[] b = new int[3];
             int[] c = new int[3];
@@ -19,7 +18,7 @@ namespace LabOne
                 for(int j = 0;j<a.Length;j++){
                     switch(i){
                         case 0:
-                        Console.Write("Please enter a"+j+": ");
+                        Console.Write("Please enter a"+(j+1)+": ");
                         bool tryAgain = true;
                         while (tryAgain)
                         {
@@ -35,8 +34,8 @@ namespace LabOne
                         }
                         break;
                             case 1:
-                        Console.Write("Please enter b"+j+": ");
-                        bool tryAgain = true;
+                        Console.Write("Please enter b"+(j+1)+": ");
+                         tryAgain = true;
                         while (tryAgain)
                         {
                             try
@@ -51,8 +50,8 @@ namespace LabOne
                         }
                         break;
                             case 2:
-                        Console.Write("Please enter c"+j+": ");
-                        bool tryAgain = true;
+                        Console.Write("Please enter c"+(j+1)+": ");
+                         tryAgain = true;
                         while (tryAgain)
                         {
                             try
@@ -66,9 +65,9 @@ namespace LabOne
                             }
                         }
                         break;
-                            case 0:
-                        Console.Write("Please enter d"+j+": ");
-                        bool tryAgain = true;
+                            case 3:
+                        Console.Write("Please enter d"+(j+1)+": ");
+                         tryAgain = true;
                         while (tryAgain)
                         {
                             try
@@ -85,12 +84,12 @@ namespace LabOne
                             }
                 }
             }
-           int delta = a1 * b2 * c3 + a3 * b1 * c2 + a2 * b3 * c1 - a3 * b2 * c1 - a1 * b3 * c2 - a2 * b1 * c3;
+           int delta = a[0] * b[1] * c[2] + a[2] * b[0] * c[1] + a[1] * b[2] * c[0]- a[2] * b[1] * c[0] - a[0] * b[2] * c[1] - a[1] * b[0] * c[2];
             if (delta != 0)
             {
-                int deltaX = d1 * b2 * c3 + d3 * b1 * c2 + d2 * b3 * c1 - d3 * b2 * c1 - d1 * b3 * c2 - d2 * b1 * c3;
-                int deltaY = a1 * d2 * c3 + a3 * d1 * c2 + a2 * d3 * c1 - a3 * d2 * c1 - a1 * d3 * c2 - a2 * d1 * c3;
-                int deltaZ = a1 * b2 * d3 + a3 * b1 * d2 + a2 * b3 * d1 - a3 * b2 * d1 - a1 * b3 * d2 - a2 * b1 * d3;
+                int deltaX = d[0] * b[1] * c[2] + d[2] * b[0] * c[1] + d[1] * b[2] * c[0] - d[2] * b[1] * c[0] - d[0] * b[2] * c[1] - d[1] * b[0] * c[2];
+                int deltaY = a[0] * d[1] * c[2] + a[2] * d[0] * c[1] + a[1] * d[2] * c[0] - a[2] * d[1] * c[0] - a[0] * d[2] * c[1] - a[1] * d[0] * c[2];
+                int deltaZ = a[0] * b[1] * d[2] + a[2] * b[0] * d[1] + a[1] * b[2] * d[0] - a[2] * b[1] * d[0] - a[0] * b[2] * d[1] - a[1] * b[0] * d[2];
 
                 int x = deltaX / delta;
                 int y = deltaY / delta;
