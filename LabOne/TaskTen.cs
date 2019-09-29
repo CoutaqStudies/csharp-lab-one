@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//written by Coutaq
 namespace LabOne
 {
     class TaskTen

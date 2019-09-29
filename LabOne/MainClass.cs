@@ -1,5 +1,5 @@
 ﻿using System;
-
+//written by Coutaq
 namespace LabOne
 {
     class MainClass
