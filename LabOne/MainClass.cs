@@ -28,36 +28,45 @@ namespace LabOne
                 switch (taskNumber)
             {
                 case 1:
-                    TaskOne.Do();
+                    Console.WriteLine("ONE");
                     break;
                 case 2:
+                    Console.WriteLine("ONE");
                     TaskTwo.Do();
                     break;
                 case 3:
+                    Console.WriteLine("ONE");
                     TaskThree.Do();
                     break;
                 case 4:
+                    Console.WriteLine("ONE");
                     TaskFour.Do();
                     break;
                 case 5:
+                    Console.WriteLine("ONE");
                     TaskFive.Do();
                     break;
                 case 6:
+                    Console.WriteLine("ONE");
                     TaskSix.Do();
                     break;
                 case 7:
+                    Console.WriteLine("ONE");
                     TaskSeven.Do();
                     break;
                 case 8:
+                    Console.WriteLine("ONE");
                     TaskEight.Do();
                     break;
                 case 9:
-                    TaskNine.Do();
+                    Console.WriteLine("no");
                     break;
                 case 10:
+                    Console.WriteLine("ONE");
                     TaskTen.Do();
                     break;
                 case 11:
+                    Console.WriteLine("ONE");
                     TaskEleven.Do();
                     break;
             }
