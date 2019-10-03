@@ -34,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeographicalUnit.cs" />
+    <Compile Include="Proof.cs" />
     <Compile Include="TaskEight.cs" />
     <Compile Include="TaskEleven.cs" />
     <Compile Include="TaskFive.cs" />

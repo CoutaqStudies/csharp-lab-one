@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 //written by Coutaq
 namespace LabOne
 {
-    class TaskSeven
+    internal class TaskSeven
     {
         public static void Do()
         {
-            int number = 0;
+            int number;
             Console.Write("Please enter your number: ");
-            bool tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
@@ -22,15 +17,15 @@ namespace LabOne
                     {
                         throw new FormatException();
                     }
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
             int firstDigit = number / 100;
-            int secondDigit = (number % 100)/10;
+            int secondDigit = (number % 100) / 10;
             int thirdDigit = (number % 100) % 10;
             int reversed = thirdDigit * 100 + secondDigit * 10 + firstDigit;
             Console.WriteLine(reversed);

@@ -1,36 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//written by Coutaq
+using System;
 
-//written by Coutaq
 namespace LabOne
 {
-    class GeographicalUnit
+    internal class GeographicalUnit
     {
-        private String country { get; set; }
-        private String capital { get; set; }
-        private int population { get; set; }
-        public enum formOfGov { US, F }
-        private formOfGov form { get; set; }
-        public GeographicalUnit(string country, string capital, int population, formOfGov form)
+        private string Country { get; set; }
+        private string Capital { get; set; }
+        private int Population { get; set; }
+        public enum FormOfGov { US, F }
+        private FormOfGov Form { get; set; }
+        public GeographicalUnit(string country, string capital, int population, FormOfGov form)
         {
-            this.country = country;
-            this.capital = capital;
-            this.population = population;
-            this.form = form;
+            this.Country = country;
+            this.Capital = capital;
+            this.Population = population;
+            this.Form = form;
         }
-
         public GeographicalUnit()
         {
         }
-
-        public String getInfoTable()
+        public string getInfoTable()
         {
-            String output = String.Format("|{0}|{1}|{2}|{3}|", this.country, this.capital, this.population, this.form);
+            String output = String.Format("{0,-10} |{1,-0} |{2,-10} |{3,-2}|", Country, Capital, Population, Form);
             return output;
         }
-
     }
 }

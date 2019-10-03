@@ -1,8 +1,12 @@
 ﻿using System;
-//written by Coutaq
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace LabOne
 {
-    internal class TaskFive
+    class Proof
     {
         public static void Do()
         {
@@ -33,9 +37,9 @@ namespace LabOne
                     Console.Write("Incorrect input, try again: ");
                 }
             }
-            double area = a * b / 2;
-            double perimeter = a + b + Math.Sqrt(a * a + b * b);
-            Console.WriteLine("Area: " + area + "; Perimeter: " + perimeter);
+            int abs = Math.Abs(a - b);
+            int alt = (int)Math.Sqrt(a * a - 2 * a * b + b * b);
+            Console.WriteLine(abs + "=" + alt);
         }
     }
 }

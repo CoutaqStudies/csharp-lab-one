@@ -1,21 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 //written by Coutaq
 namespace LabOne
 {
-    class TaskThree
+    internal class TaskThree
     {
         public static void Do()
         {
-            int hours = 0;
-            int minutes = 0;
-            int seconds = 0;
+            int hours;
+            int minutes;
+            int seconds;
             Console.Write("Please enter the hours: ");
-            bool tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
@@ -24,16 +19,15 @@ namespace LabOne
                     {
                         throw new FormatException();
                     }
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
             Console.Write("Please enter the minutes: ");
-            tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
@@ -42,16 +36,15 @@ namespace LabOne
                     {
                         throw new FormatException();
                     }
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
             Console.Write("Please enter the seconds: ");
-            tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
@@ -60,16 +53,15 @@ namespace LabOne
                     {
                         throw new FormatException();
                     }
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
-            double degrees = ((hours * 30) +( minutes / 2) + (seconds / 120));
+            double degrees = ((hours * 30) + (minutes / 2) + (seconds / 120));
             Console.WriteLine(degrees + " degrees.");
-        
         }
     }
 }

@@ -2,28 +2,26 @@
 //written by Coutaq
 namespace LabOne
 {
-    class TaskOne
+    internal class TaskOne
     {
         public static void Do()
         {
-            double x = 0;
+            double x ;
             Console.Write("Please enter your number: ");
-            bool tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
                     x = double.Parse(Console.ReadLine());
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
-            int d = (int)Math.Round((x%1)* 10);
+            int d = (int)Math.Round((x % 1) * 10);
             Console.WriteLine(d);
         }
-
     }
 }

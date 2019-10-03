@@ -1,49 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 //written by Coutaq
 namespace LabOne
 {
-    class TaskFour
+    internal class TaskFour
     {
         public static void Do()
         {
-            int x = 0;
-            int y = 0;
+            int x, y;
             Console.Write("Please enter x: ");
-            bool tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
                     x = int.Parse(Console.ReadLine());
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
             Console.Write("Please enter y: ");
-            tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
                     y = int.Parse(Console.ReadLine());
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
-
-            y = x-y;
-            x = x-y;
-            y = x+y;
+            y -= x;
+            x -= y;
+            y += x;
             Console.WriteLine("X: " + x + "; Y: " + y);
         }
     }

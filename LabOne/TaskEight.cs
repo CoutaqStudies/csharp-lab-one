@@ -1,31 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 //written by Coutaq
 namespace LabOne
 {
-    class TaskEight
+    internal class TaskEight
     {
         public static void Do()
         {
-            double x = 0;
             Console.Write("Please enter your number: ");
-            bool tryAgain = true;
-            while (tryAgain)
+            double x;
+            while (true)
             {
                 try
                 {
                     x = double.Parse(Console.ReadLine());
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
-            double answer = 7+x*(-1+x*(2+x*(-5+3*x)));
+            double answer = 7 + x * (-1 + x * (2 + x * (-5 + 3 * x)));
             Console.WriteLine(answer);
         }
     }

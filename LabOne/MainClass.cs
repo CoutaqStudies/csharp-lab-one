@@ -2,30 +2,29 @@
 //written by Coutaq
 namespace LabOne
 {
-    class MainClass
+    internal class MainClass
     {
         public static void Main(string[] args)
         {
-            int taskNumber = 1;
             Console.Write("Please select the task(1-11): ");
-            bool tryAgain = true;
-            while (tryAgain)
+            int taskNumber;
+            while (true)
             {
                 try
                 {
                     taskNumber = int.Parse(Console.ReadLine());
-                    if(taskNumber < 1 || taskNumber>11)
+                    if (taskNumber < 1 || taskNumber > 12)
                     {
-                       throw new FormatException();
+                        throw new FormatException();
                     }
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
-                switch (taskNumber)
+            switch (taskNumber)
             {
                 case 1:
                     TaskOne.Do();
@@ -71,8 +70,11 @@ namespace LabOne
                     TaskTen.Do();
                     MainClass.Main(args);
                     break;
+                case 12:
+                    Proof.Do();
+                    MainClass.Main(args);
+                    break;
             }
         }
-
     }
 }

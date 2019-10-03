@@ -1,39 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 //written by Coutaq
 namespace LabOne
 {
-    class TaskSix
+    internal class TaskSix
     {
         public static void Do()
         {
-            int number = 0;
+            int number;
             Console.Write("Please enter your number: ");
-            bool tryAgain = true;
-            while (tryAgain)
+            while (true)
             {
                 try
                 {
                     number = int.Parse(Console.ReadLine());
-                    if(number < 1000 || number > 9999)
+                    if (number < 1000 || number > 9999)
                     {
                         throw new FormatException();
                     }
-                    tryAgain = false;
+                    break;
                 }
-                catch (FormatException e)
+                catch (FormatException)
                 {
                     Console.Write("Incorrect input, try again: ");
                 }
             }
             int firstDigit = number / 1000;
             int secondDigit = (number / 100) % 10;
-            int thirdDigit = (number % 100)/10;
-            int fourthDigit = (number&100)%10;
-            Console.WriteLine(firstDigit*secondDigit*thirdDigit*fourthDigit);
+            int thirdDigit = (number % 100) / 10;
+            int fourthDigit = (number & 100) % 10;
+            Console.WriteLine(firstDigit * secondDigit * thirdDigit * fourthDigit);
         }
 
     }
