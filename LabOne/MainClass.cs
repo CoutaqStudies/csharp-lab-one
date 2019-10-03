@@ -67,7 +67,7 @@ namespace LabOne
                     MainClass.Main(args);
                     break;
                 case 11:
-                    TaskTen.Do();
+                    TaskEleven.Do();
                     MainClass.Main(args);
                     break;
                 case 12:
